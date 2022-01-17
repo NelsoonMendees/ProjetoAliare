@@ -38,6 +38,8 @@
             this.lblLogo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneTitulo = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.paneCentral = new System.Windows.Forms.Panel();
             this.paneMenu.SuspendLayout();
@@ -76,7 +78,7 @@
             this.btnHome.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnHome.Size = new System.Drawing.Size(219, 62);
             this.btnHome.TabIndex = 4;
-            this.btnHome.Text = "Home";
+            this.btnHome.Text = "&Home";
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
@@ -96,7 +98,7 @@
             this.btnRecibo.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnRecibo.Size = new System.Drawing.Size(219, 62);
             this.btnRecibo.TabIndex = 3;
-            this.btnRecibo.Text = "Recibo";
+            this.btnRecibo.Text = "&Recibo";
             this.btnRecibo.UseVisualStyleBackColor = true;
             // 
             // btnConsulta
@@ -115,8 +117,9 @@
             this.btnConsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnConsulta.Size = new System.Drawing.Size(219, 62);
             this.btnConsulta.TabIndex = 2;
-            this.btnConsulta.Text = "Consultar";
+            this.btnConsulta.Text = "&Consultar";
             this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnCadastro
             // 
@@ -134,7 +137,7 @@
             this.btnCadastro.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnCadastro.Size = new System.Drawing.Size(219, 62);
             this.btnCadastro.TabIndex = 1;
-            this.btnCadastro.Text = "Cadastro";
+            this.btnCadastro.Text = "&Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
@@ -172,12 +175,45 @@
             // paneTitulo
             // 
             this.paneTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.paneTitulo.Controls.Add(this.btnMinimize);
+            this.paneTitulo.Controls.Add(this.btnClose);
             this.paneTitulo.Controls.Add(this.lblTitulo);
             this.paneTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneTitulo.Location = new System.Drawing.Point(219, 0);
             this.paneTitulo.Name = "paneTitulo";
             this.paneTitulo.Size = new System.Drawing.Size(919, 100);
             this.paneTitulo.TabIndex = 1;
+            this.paneTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneTitulo_MouseDown);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.Location = new System.Drawing.Point(861, 4);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(23, 24);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(125)))), ((int)(((byte)(139)))));
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(68)))), ((int)(((byte)(83)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(890, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(23, 23);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblTitulo
             // 
@@ -208,10 +244,12 @@
             this.Controls.Add(this.paneCentral);
             this.Controls.Add(this.paneTitulo);
             this.Controls.Add(this.paneMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gerenciador";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Frm_Principal_KeyDown);
             this.paneMenu.ResumeLayout(false);
             this.paneLogo.ResumeLayout(false);
             this.paneLogo.PerformLayout();
@@ -234,5 +272,7 @@
         private Panel paneTitulo;
         private Label lblTitulo;
         private Panel paneCentral;
+        private Button btnMinimize;
+        private Button btnClose;
     }
 }

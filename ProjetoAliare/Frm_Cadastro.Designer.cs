@@ -48,6 +48,11 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.rbFornecedor = new System.Windows.Forms.RadioButton();
+            this.rbCliente = new System.Windows.Forms.RadioButton();
+            this.lblConsulta = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.lblBairro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNome
@@ -56,25 +61,28 @@
             this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtNome.Location = new System.Drawing.Point(120, 137);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(401, 23);
+            this.txtNome.Size = new System.Drawing.Size(412, 23);
             this.txtNome.TabIndex = 0;
             // 
             // txtLogradouro
             // 
             this.txtLogradouro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtLogradouro.Location = new System.Drawing.Point(120, 195);
             this.txtLogradouro.Name = "txtLogradouro";
-            this.txtLogradouro.Size = new System.Drawing.Size(342, 23);
+            this.txtLogradouro.Size = new System.Drawing.Size(294, 23);
             this.txtLogradouro.TabIndex = 1;
             // 
             // mskCpfCnpj
             // 
             this.mskCpfCnpj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.mskCpfCnpj.Enabled = false;
             this.mskCpfCnpj.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.mskCpfCnpj.Location = new System.Drawing.Point(570, 137);
             this.mskCpfCnpj.Name = "mskCpfCnpj";
-            this.mskCpfCnpj.Size = new System.Drawing.Size(163, 23);
+            this.mskCpfCnpj.Size = new System.Drawing.Size(174, 23);
             this.mskCpfCnpj.TabIndex = 2;
+            this.mskCpfCnpj.Leave += new System.EventHandler(this.mskCpfCnpj_Leave);
             // 
             // mskCep
             // 
@@ -83,8 +91,9 @@
             this.mskCep.Location = new System.Drawing.Point(570, 195);
             this.mskCep.Mask = "00000-000";
             this.mskCep.Name = "mskCep";
-            this.mskCep.Size = new System.Drawing.Size(163, 23);
+            this.mskCep.Size = new System.Drawing.Size(174, 23);
             this.mskCep.TabIndex = 3;
+            this.mskCep.Leave += new System.EventHandler(this.mskCep_Leave);
             // 
             // rbCPF
             // 
@@ -112,6 +121,7 @@
             this.rbCNPJ.TabStop = true;
             this.rbCNPJ.Text = "CNPJ";
             this.rbCNPJ.UseVisualStyleBackColor = true;
+            this.rbCNPJ.CheckedChanged += new System.EventHandler(this.rbCNPJ_CheckedChanged);
             // 
             // lblCEP
             // 
@@ -127,9 +137,10 @@
             // txtNum
             // 
             this.txtNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNum.Location = new System.Drawing.Point(468, 195);
+            this.txtNum.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNum.Location = new System.Drawing.Point(489, 258);
             this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(53, 23);
+            this.txtNum.Size = new System.Drawing.Size(43, 23);
             this.txtNum.TabIndex = 7;
             // 
             // lblNum
@@ -137,7 +148,7 @@
             this.lblNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNum.Location = new System.Drawing.Point(468, 176);
+            this.lblNum.Location = new System.Drawing.Point(489, 236);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(25, 19);
             this.lblNum.TabIndex = 8;
@@ -148,7 +159,7 @@
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNome.Location = new System.Drawing.Point(120, 115);
+            this.lblNome.Location = new System.Drawing.Point(120, 90);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(149, 19);
             this.lblNome.TabIndex = 9;
@@ -168,9 +179,10 @@
             // txtComplemento
             // 
             this.txtComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtComplemento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtComplemento.Location = new System.Drawing.Point(120, 258);
             this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(342, 23);
+            this.txtComplemento.Size = new System.Drawing.Size(363, 23);
             this.txtComplemento.TabIndex = 11;
             // 
             // lblComplemento
@@ -187,7 +199,8 @@
             // txtEstado
             // 
             this.txtEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEstado.Location = new System.Drawing.Point(468, 258);
+            this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEstado.Location = new System.Drawing.Point(691, 258);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(53, 23);
             this.txtEstado.TabIndex = 13;
@@ -197,7 +210,7 @@
             this.lblEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEstado.Location = new System.Drawing.Point(468, 236);
+            this.lblEstado.Location = new System.Drawing.Point(691, 236);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(53, 19);
             this.lblEstado.TabIndex = 14;
@@ -206,9 +219,10 @@
             // txtCidade
             // 
             this.txtCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txtCidade.Location = new System.Drawing.Point(570, 258);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(163, 23);
+            this.txtCidade.Size = new System.Drawing.Size(115, 23);
             this.txtCidade.TabIndex = 15;
             // 
             // lblCidade
@@ -238,6 +252,7 @@
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnLimpar
             // 
@@ -255,6 +270,7 @@
             this.btnLimpar.TabIndex = 18;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnCadastrar
             // 
@@ -273,12 +289,72 @@
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
+            // rbFornecedor
+            // 
+            this.rbFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbFornecedor.AutoSize = true;
+            this.rbFornecedor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbFornecedor.Location = new System.Drawing.Point(193, 112);
+            this.rbFornecedor.Name = "rbFornecedor";
+            this.rbFornecedor.Size = new System.Drawing.Size(89, 19);
+            this.rbFornecedor.TabIndex = 21;
+            this.rbFornecedor.TabStop = true;
+            this.rbFornecedor.Text = "Fornecedor";
+            this.rbFornecedor.UseVisualStyleBackColor = true;
+            // 
+            // rbCliente
+            // 
+            this.rbCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbCliente.AutoSize = true;
+            this.rbCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rbCliente.Location = new System.Drawing.Point(120, 112);
+            this.rbCliente.Name = "rbCliente";
+            this.rbCliente.Size = new System.Drawing.Size(64, 19);
+            this.rbCliente.TabIndex = 20;
+            this.rbCliente.TabStop = true;
+            this.rbCliente.Text = "Cliente";
+            this.rbCliente.UseVisualStyleBackColor = true;
+            // 
+            // lblConsulta
+            // 
+            this.lblConsulta.AutoSize = true;
+            this.lblConsulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblConsulta.Location = new System.Drawing.Point(659, 163);
+            this.lblConsulta.Name = "lblConsulta";
+            this.lblConsulta.Size = new System.Drawing.Size(0, 15);
+            this.lblConsulta.TabIndex = 22;
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtBairro.Location = new System.Drawing.Point(420, 195);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(112, 23);
+            this.txtBairro.TabIndex = 23;
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblBairro.Location = new System.Drawing.Point(420, 173);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(51, 19);
+            this.lblBairro.TabIndex = 24;
+            this.lblBairro.Text = "Bairro";
+            // 
             // Frm_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(919, 468);
+            this.Controls.Add(this.lblBairro);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.lblConsulta);
+            this.Controls.Add(this.rbFornecedor);
+            this.Controls.Add(this.rbCliente);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCancelar);
@@ -300,6 +376,7 @@
             this.Controls.Add(this.txtLogradouro);
             this.Controls.Add(this.txtNome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Frm_Cadastro";
             this.Text = "Frm_Cadastro";
             this.ResumeLayout(false);
@@ -329,5 +406,10 @@
         private Button btnCancelar;
         private Button btnLimpar;
         private Button btnCadastrar;
+        private RadioButton rbFornecedor;
+        private RadioButton rbCliente;
+        private Label lblConsulta;
+        private TextBox txtBairro;
+        private Label lblBairro;
     }
 }

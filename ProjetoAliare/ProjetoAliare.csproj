@@ -13,6 +13,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <OpenApiReference Include="OpenAPIs\redirect.json" CodeGenerator="NSwagCSharp">
+      <SourceUri>https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa3gxRUdPZTdvTDktajFuZnIzb0g2VkNhR0pEd3xBQ3Jtc0trOXRJaGNZZ0hBR3BMQm1tdDRTaHltU2pILXN1WncxLUd3c3lUZ1FtYWJJOTQ1MlBkNVR3TC1VTDVOTmx1azFMVTh1RmozZFVHLXhGakJFWk80MnFyc2pnNlhwZkc3alFTSnBpeVowcUQ1N2YzSHhUUQ&amp;q=https%3A%2F%2Fapps.correios.com.br%2FSigepMasterJPA%2FAtendeClienteService%2FAtendeCliente%3Fwsdl</SourceUri>
+    </OpenApiReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.9.0" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.9.0" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.9.0" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
