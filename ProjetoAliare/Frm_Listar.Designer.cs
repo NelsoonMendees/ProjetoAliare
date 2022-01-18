@@ -64,10 +64,10 @@
             this.Bairro,
             this.Estado,
             this.Cidade});
-            this.dataGridView1.Location = new System.Drawing.Point(47, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 173);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(813, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(1043, 290);
             this.dataGridView1.TabIndex = 0;
             // 
             // ID
@@ -123,9 +123,9 @@
             // btnBuscar
             // 
             this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
-            this.btnBuscar.Location = new System.Drawing.Point(203, 39);
+            this.btnBuscar.Location = new System.Drawing.Point(181, 123);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(38, 25);
+            this.btnBuscar.Size = new System.Drawing.Size(51, 25);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
@@ -139,7 +139,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCancelar.Location = new System.Drawing.Point(716, 384);
+            this.btnCancelar.Location = new System.Drawing.Point(905, 543);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(144, 33);
             this.btnCancelar.TabIndex = 18;
@@ -156,7 +156,7 @@
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeletar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDeletar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDeletar.Location = new System.Drawing.Point(566, 384);
+            this.btnDeletar.Location = new System.Drawing.Point(755, 543);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(144, 33);
             this.btnDeletar.TabIndex = 19;
@@ -173,7 +173,7 @@
             this.BtnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEditar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnEditar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.BtnEditar.Location = new System.Drawing.Point(416, 384);
+            this.BtnEditar.Location = new System.Drawing.Point(605, 543);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(144, 33);
             this.BtnEditar.TabIndex = 20;
@@ -182,9 +182,9 @@
             // 
             // mskConsulta
             // 
-            this.mskConsulta.Location = new System.Drawing.Point(47, 40);
+            this.mskConsulta.Location = new System.Drawing.Point(25, 124);
             this.mskConsulta.Name = "mskConsulta";
-            this.mskConsulta.Size = new System.Drawing.Size(153, 23);
+            this.mskConsulta.Size = new System.Drawing.Size(166, 23);
             this.mskConsulta.TabIndex = 21;
             // 
             // rbCNPJ
@@ -192,7 +192,7 @@
             this.rbCNPJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbCNPJ.AutoSize = true;
             this.rbCNPJ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbCNPJ.Location = new System.Drawing.Point(141, 15);
+            this.rbCNPJ.Location = new System.Drawing.Point(118, 99);
             this.rbCNPJ.Name = "rbCNPJ";
             this.rbCNPJ.Size = new System.Drawing.Size(52, 19);
             this.rbCNPJ.TabIndex = 23;
@@ -206,7 +206,7 @@
             this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbCPF.AutoSize = true;
             this.rbCPF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbCPF.Location = new System.Drawing.Point(47, 15);
+            this.rbCPF.Location = new System.Drawing.Point(24, 99);
             this.rbCPF.Name = "rbCPF";
             this.rbCPF.Size = new System.Drawing.Size(45, 19);
             this.rbCPF.TabIndex = 22;
@@ -220,7 +220,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(903, 429);
+            this.ClientSize = new System.Drawing.Size(1092, 607);
             this.Controls.Add(this.rbCNPJ);
             this.Controls.Add(this.rbCPF);
             this.Controls.Add(this.mskConsulta);

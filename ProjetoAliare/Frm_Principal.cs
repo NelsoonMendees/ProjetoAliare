@@ -15,8 +15,52 @@ namespace ProjetoAliare
         public Frm_Principal ()
         {
             InitializeComponent();
+            customizarDesing();
         }
 
+
+        private void customizarDesing()
+        {
+            paneCadastro.Visible = false;
+            paneConsulta.Visible = false;
+        }
+
+        private void esconderSubMenu()
+        {
+            if(paneCadastro.Visible == true)
+            {
+                paneCadastro.Visible = false;
+            } 
+            if(paneConsulta.Visible == true)
+            {
+                paneConsulta.Visible = false;
+            }
+        }
+
+        private void mostrarSubMenu(Panel subMenu)
+        {
+            if(subMenu.Visible == false)
+            {
+                esconderSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+            }
+        }
+
+        //mostra o menu de cadastro
+        private void btnMenuCad_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(paneCadastro);
+        }
+
+        //Mostra o menu de Consulta
+        private void btnMenuCons_Click(object sender, EventArgs e)
+        {
+            mostrarSubMenu(paneConsulta);
+        }
 
         //Metodo para mostrar o formulario no painel central
         private void FormShow (Form frm)
@@ -44,29 +88,34 @@ namespace ProjetoAliare
             frmAtivo.ForeColor = Color.Red; // altera a cor da letra do button ativo
         }
 
-        private void btnCadastro_Click (object sender, EventArgs e)
-        {
-            ActiveButton(btnCadastro);
-            FormShow(new Frm_Cadastro());
-            lblTitulo.Text = "Cadastro";
-            //atalho F1
-        }
-
-        private void btnHome_Click (object sender, EventArgs e)
+        //Evento para voltar ao menu principal
+        private void btnHome_Click(object sender, EventArgs e)
         {
             ActiveButton(btnHome);
             ActiveFormClose();
             lblTitulo.Text = "Menu Principal";
+            esconderSubMenu();
             //atalho ESC
         }
 
-        private void btnConsulta_Click (object sender, EventArgs e)
-        {
-            ActiveButton(btnConsulta);
-            FormShow(new Frm_Listar());
-            lblTitulo.Text = "Consultar";
-            //atalho F2
-        }
+        //Evento para abrir tela de cadastro
+        //private void btnCliente_Click(object sender, EventArgs e)
+        //{
+        //    ActiveButton(btnCliente);
+        //    FormShow(new Frm_Cadastro());
+        //    lblTitulo.Text = "Cadastro";
+        //    //atalho F1
+        //}
+
+      
+        //Evento para abrir tela de consulta
+        //private void btnConsulta_Click (object sender, EventArgs e)
+        //{
+        //    ActiveButton(btnConsCliente);
+        //    FormShow(new Frm_Listar());
+        //    lblTitulo.Text = "Consultar";
+        //    //atalho F2
+        //}
 
         private void Frm_Principal_KeyDown (object sender, KeyEventArgs e)
         {
@@ -79,13 +128,13 @@ namespace ProjetoAliare
                 break;
 
                 case Keys.F1:
-                ActiveButton(btnCadastro);
+                ActiveButton(btnCliente);
                 FormShow(new Frm_Cadastro());
                 lblTitulo.Text = "Cadastro";
                 break;
 
                 case Keys.F2:
-                ActiveButton(btnConsulta);
+                ActiveButton(btnConsCliente);
                 FormShow(new Frm_Listar());
                 lblTitulo.Text = "Consultar";
                 break;
@@ -116,5 +165,7 @@ namespace ProjetoAliare
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+
+
     }
 }

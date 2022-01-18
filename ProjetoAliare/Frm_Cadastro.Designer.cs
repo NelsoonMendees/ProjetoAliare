@@ -59,7 +59,7 @@
             // 
             this.txtNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNome.Location = new System.Drawing.Point(120, 137);
+            this.txtNome.Location = new System.Drawing.Point(232, 249);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(412, 23);
             this.txtNome.TabIndex = 0;
@@ -68,7 +68,7 @@
             // 
             this.txtLogradouro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLogradouro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtLogradouro.Location = new System.Drawing.Point(120, 195);
+            this.txtLogradouro.Location = new System.Drawing.Point(232, 307);
             this.txtLogradouro.Name = "txtLogradouro";
             this.txtLogradouro.Size = new System.Drawing.Size(294, 23);
             this.txtLogradouro.TabIndex = 1;
@@ -78,7 +78,7 @@
             this.mskCpfCnpj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.mskCpfCnpj.Enabled = false;
             this.mskCpfCnpj.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.mskCpfCnpj.Location = new System.Drawing.Point(570, 137);
+            this.mskCpfCnpj.Location = new System.Drawing.Point(682, 249);
             this.mskCpfCnpj.Name = "mskCpfCnpj";
             this.mskCpfCnpj.Size = new System.Drawing.Size(174, 23);
             this.mskCpfCnpj.TabIndex = 2;
@@ -88,7 +88,7 @@
             // 
             this.mskCep.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.mskCep.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.mskCep.Location = new System.Drawing.Point(570, 195);
+            this.mskCep.Location = new System.Drawing.Point(682, 307);
             this.mskCep.Mask = "00000-000";
             this.mskCep.Name = "mskCep";
             this.mskCep.Size = new System.Drawing.Size(174, 23);
@@ -100,7 +100,7 @@
             this.rbCPF.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbCPF.AutoSize = true;
             this.rbCPF.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbCPF.Location = new System.Drawing.Point(571, 112);
+            this.rbCPF.Location = new System.Drawing.Point(683, 224);
             this.rbCPF.Name = "rbCPF";
             this.rbCPF.Size = new System.Drawing.Size(45, 19);
             this.rbCPF.TabIndex = 4;
@@ -114,7 +114,7 @@
             this.rbCNPJ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbCNPJ.AutoSize = true;
             this.rbCNPJ.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbCNPJ.Location = new System.Drawing.Point(670, 112);
+            this.rbCNPJ.Location = new System.Drawing.Point(782, 224);
             this.rbCNPJ.Name = "rbCNPJ";
             this.rbCNPJ.Size = new System.Drawing.Size(52, 19);
             this.rbCNPJ.TabIndex = 5;
@@ -128,7 +128,7 @@
             this.lblCEP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCEP.AutoSize = true;
             this.lblCEP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCEP.Location = new System.Drawing.Point(574, 176);
+            this.lblCEP.Location = new System.Drawing.Point(686, 288);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(34, 19);
             this.lblCEP.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             this.txtNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNum.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtNum.Location = new System.Drawing.Point(489, 258);
+            this.txtNum.Location = new System.Drawing.Point(601, 370);
             this.txtNum.Name = "txtNum";
             this.txtNum.Size = new System.Drawing.Size(43, 23);
             this.txtNum.TabIndex = 7;
@@ -148,7 +148,7 @@
             this.lblNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNum.Location = new System.Drawing.Point(489, 236);
+            this.lblNum.Location = new System.Drawing.Point(601, 348);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(25, 19);
             this.lblNum.TabIndex = 8;
@@ -159,7 +159,7 @@
             this.lblNome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNome.Location = new System.Drawing.Point(120, 90);
+            this.lblNome.Location = new System.Drawing.Point(232, 202);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(149, 19);
             this.lblNome.TabIndex = 9;
@@ -170,7 +170,7 @@
             this.lblLogradouro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblLogradouro.AutoSize = true;
             this.lblLogradouro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblLogradouro.Location = new System.Drawing.Point(120, 173);
+            this.lblLogradouro.Location = new System.Drawing.Point(232, 285);
             this.lblLogradouro.Name = "lblLogradouro";
             this.lblLogradouro.Size = new System.Drawing.Size(89, 19);
             this.lblLogradouro.TabIndex = 10;
@@ -180,7 +180,7 @@
             // 
             this.txtComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtComplemento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtComplemento.Location = new System.Drawing.Point(120, 258);
+            this.txtComplemento.Location = new System.Drawing.Point(232, 370);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(363, 23);
             this.txtComplemento.TabIndex = 11;
@@ -190,7 +190,7 @@
             this.lblComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblComplemento.Location = new System.Drawing.Point(120, 236);
+            this.lblComplemento.Location = new System.Drawing.Point(232, 348);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(104, 19);
             this.lblComplemento.TabIndex = 12;
@@ -200,7 +200,7 @@
             // 
             this.txtEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtEstado.Location = new System.Drawing.Point(691, 258);
+            this.txtEstado.Location = new System.Drawing.Point(803, 370);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(53, 23);
             this.txtEstado.TabIndex = 13;
@@ -210,7 +210,7 @@
             this.lblEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblEstado.Location = new System.Drawing.Point(691, 236);
+            this.lblEstado.Location = new System.Drawing.Point(803, 348);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(53, 19);
             this.lblEstado.TabIndex = 14;
@@ -220,7 +220,7 @@
             // 
             this.txtCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCidade.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtCidade.Location = new System.Drawing.Point(570, 258);
+            this.txtCidade.Location = new System.Drawing.Point(682, 370);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(115, 23);
             this.txtCidade.TabIndex = 15;
@@ -230,7 +230,7 @@
             this.lblCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCidade.Location = new System.Drawing.Point(570, 236);
+            this.lblCidade.Location = new System.Drawing.Point(682, 348);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(56, 19);
             this.lblCidade.TabIndex = 16;
@@ -246,7 +246,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCancelar.Location = new System.Drawing.Point(711, 401);
+            this.btnCancelar.Location = new System.Drawing.Point(884, 540);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(144, 33);
             this.btnCancelar.TabIndex = 17;
@@ -264,7 +264,7 @@
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLimpar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnLimpar.Location = new System.Drawing.Point(545, 401);
+            this.btnLimpar.Location = new System.Drawing.Point(718, 540);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(144, 33);
             this.btnLimpar.TabIndex = 18;
@@ -282,7 +282,7 @@
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCadastrar.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnCadastrar.Location = new System.Drawing.Point(377, 401);
+            this.btnCadastrar.Location = new System.Drawing.Point(550, 540);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(144, 33);
             this.btnCadastrar.TabIndex = 19;
@@ -294,7 +294,7 @@
             this.rbFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbFornecedor.AutoSize = true;
             this.rbFornecedor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbFornecedor.Location = new System.Drawing.Point(193, 112);
+            this.rbFornecedor.Location = new System.Drawing.Point(305, 224);
             this.rbFornecedor.Name = "rbFornecedor";
             this.rbFornecedor.Size = new System.Drawing.Size(89, 19);
             this.rbFornecedor.TabIndex = 21;
@@ -307,7 +307,7 @@
             this.rbCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbCliente.AutoSize = true;
             this.rbCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rbCliente.Location = new System.Drawing.Point(120, 112);
+            this.rbCliente.Location = new System.Drawing.Point(232, 224);
             this.rbCliente.Name = "rbCliente";
             this.rbCliente.Size = new System.Drawing.Size(64, 19);
             this.rbCliente.TabIndex = 20;
@@ -319,7 +319,7 @@
             // 
             this.lblConsulta.AutoSize = true;
             this.lblConsulta.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblConsulta.Location = new System.Drawing.Point(659, 163);
+            this.lblConsulta.Location = new System.Drawing.Point(775, 275);
             this.lblConsulta.Name = "lblConsulta";
             this.lblConsulta.Size = new System.Drawing.Size(0, 15);
             this.lblConsulta.TabIndex = 22;
@@ -328,7 +328,7 @@
             // 
             this.txtBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBairro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtBairro.Location = new System.Drawing.Point(420, 195);
+            this.txtBairro.Location = new System.Drawing.Point(532, 307);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(112, 23);
             this.txtBairro.TabIndex = 23;
@@ -338,7 +338,7 @@
             this.lblBairro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBairro.AutoSize = true;
             this.lblBairro.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblBairro.Location = new System.Drawing.Point(420, 173);
+            this.lblBairro.Location = new System.Drawing.Point(532, 285);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(51, 19);
             this.lblBairro.TabIndex = 24;
@@ -349,7 +349,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(919, 468);
+            this.ClientSize = new System.Drawing.Size(1092, 607);
             this.Controls.Add(this.lblBairro);
             this.Controls.Add(this.txtBairro);
             this.Controls.Add(this.lblConsulta);
